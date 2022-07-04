@@ -1,0 +1,125 @@
+.galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffffff;
+  border-radius: 1px;
+  transition: transform 0.3s ease-in-out;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.galeria img:hover {
+  filter: opacity(0.9);
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.06);
+}
+
+
+
+#fh5co-header {
+    padding-top: 40px;
+    margin-bottom: 30px;
+  }
+  #fh5co-header #fh5co-logo img {
+    max-width: 50%;
+    align-items: center;
+    
+  }
+  #fh5co-header nav {
+    padding-top: 20px;
+  }
+  #fh5co-header nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  #fh5co-header nav ul li {
+    padding: 0;
+    margin: 0;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    list-style: none;
+    font-size: 15px;
+  }
+  #fh5co-header nav ul li a {
+    color: #999999 !important;
+    padding: 10px;
+     }
+
+
+
+body {
+    font-family: "Roboto", Arial, serif;
+    line-height: 1.8;
+    font-size: 16px;
+    background: #fff;
+    color: #848484;
+    font-weight: 300;
+    overflow-x: hidden;
+    margin-left: 200px; 
+  }
+
+
+.galeria {
+  
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 5px ;
+    grid-auto-rows: 100px;
+    grid-auto-flow: row dense;
+    padding: px;
+    justify-content: center;
+  
+  }
+  
+  .galeria img {
+    width: 100%;
+    height: 100%;
+    grid-area: span 6 / span 3;
+    object-fit: cover;
+  }
+  
+  a {
+    color: #2da9d7;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #212121;
+    font-family: "Roboto", Arial, serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+  }
+
+  .galeria2{
+    
+   grid-column: auto;
+    object-fit: fill;
+    grid-area: span 1 / span 2;
+
+  }
+  @media (min-width: 100px ) {
+    .galeria img{
+        grid-row: span 4 / span 6;
+    }
+
+    .galeria {
+      grid-column: span 2;
+      object-fit: cover;
+    }
+  
+    .galeria {
+      grid-row: span 2;
+    }
+  }
+  
+  /*# sourceMappingURL=style.css.map */
